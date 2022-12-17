@@ -1,3 +1,8 @@
-# calculate_work_days
-# - Should be able to receive an interval as the period under consideration
-# - Should be able to receive as days off an array containing both individual dates as well as periods 
+require 'date'
+
+class WorkingDayCalculator
+  def calculate_working_days(period, days_off)
+    flattened_days_off = days_off.map { |date| date.class == Range ? date.to_a : date }.flatten
+    (period.to_a - flattened_days_off).length
+  end
+end
