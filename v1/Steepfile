@@ -4,5 +4,7 @@ target :lib do
 
   check 'working_day_calculator_test.rb'
 
+  library 'date' # Instructs Steep to load the signatures for the date library.
+
   configure_code_diagnostics(D::Ruby.strict)
 end
