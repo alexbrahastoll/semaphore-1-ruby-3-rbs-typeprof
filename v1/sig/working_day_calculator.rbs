@@ -1,0 +1,8 @@
+class WorkingDayCalculator
+  attr_accessor period_start: Date
+  attr_accessor period_end: Date
+  attr_reader days_off: Array[Date]
+  def initialize: -> void
+  def add_day_off: (Date date) -> Array[Date]
+  def calculate_working_days: -> untyped
+end
