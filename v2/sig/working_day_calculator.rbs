@@ -1,3 +1,3 @@
 class WorkingDayCalculator
-  def calculate_working_days: (untyped period, untyped days_off) -> untyped
+  def calculate_working_days: (Range[Date] period, Array[Range[Date] | Date] days_off) -> Integer
 end
