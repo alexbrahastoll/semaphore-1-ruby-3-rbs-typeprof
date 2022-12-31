@@ -1,0 +1,3 @@
+class WorkingDayCalculator
+  def calculate_working_days: (untyped period, untyped days_off) -> untyped
+end
